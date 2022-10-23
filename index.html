@@ -4,7 +4,7 @@
         <title>Barbershop</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
@@ -18,30 +18,30 @@
                             <a href="#">Home</a>
                         </li>
                         <li>
-                            <a href="#about">Sobre</a>
+                            <a href="#about">About</a>
                         </li>
                         <li>
-                            <a href="#services">Serviços</a>
+                            <a href="#services">Services</a>
                         </li>
                         <li>
                             <img src="images/logo.png" alt="logo" class="logo">
                         </li>
                         <li>
-                            <a href="#gallery">Galeria</a>
+                            <a href="#gallery">Gallery</a>
                         </li>
                         <li>
-                            <a href="#appointment">Agendamento</a>
+                            <a href="#appointment">Appointment</a>
                         </li>
                         <li>
-                            <a href="#location">Localização</a>
+                            <a href="#location">Location</a>
                         </li>
                     </ul>
                 </nav>
             </header>
             <div class="banner">
-                <span class="slogan1">Profissionalismo e Excelência</span>
+                <span class="slogan1">Professionalism and Excelence</span>
                 <h1>Barber Shop</h1>
-                <span class="slogan2">O melhor lugar para cuidar do seu estilo</span>
+                <span class="slogan2">The best place to look out for your style</span>
                 <img src="images/much-img.png" alt="Barber Shop">
             </div>
         </section>
@@ -49,33 +49,41 @@
             <div class="container">
                 <div class="timing">
                     <div class="overlay">
-                        <img src="images/classic-cut.png" alt="Barber Shop" class="icon-cut">
-                        <h3>Horários</h3>
-                        <div class="text">
-                            <h4>Segunda-feira à Sexta-feira</h4>
-                            <span>09:00 AM - 17:00 PM</span>
+                        <div class="overlay-title">
+                            <img src="images/classic-cut.png" alt="Barber Shop" class="icon-cut">
+                            <h3>Opening Hours</h3>
                         </div>
-
-                        <div class="text">
-                            <h4>Sábado</h4>
-                            <span>09:00 AM - 14:00 PM</span>
+                        <div class="overlay-text">
+                            <div class="text">
+                                <h4>Mondays to Fridays</h4>
+                                <span>09:00 AM - 17:00 PM</span>
+                            </div>
+    
+                            <div class="text">
+                                <h4>Saturdays</h4>
+                                <span>09:00 AM - 14:00 PM</span>
+                            </div>
+    
+                            <div class="text">
+                                <h4>Sundays</h4>
+                                <span>Closed</span>
+                            </div>
+                            
+                            <div>
+                                <img src="images/loc-ic.png" alt="Location">
+                                <span>33 Matrix St.</span>
+                            </div>
+                            <br><br>
+                            <div>
+                                <img src="images/phone-ic.png" alt="Phone">
+                                <span>(11) 9999-9999</span>
+                            </div>
                         </div>
-
-                        <div class="text">
-                            <h4>Domingo</h4>
-                            <span>Fechado</span>
-                        </div>
-
-                        <img src="images/loc-ic.png" alt="Location">
-                        <span>Rua da Matrix, 33</span>
-                        <br><br>
-                        <img src="images/phone-ic.png" alt="Phone">
-                        <span>(11) 9999-9999</span>
                     </div>
                 </div>
                 <div class="experience">
-                    <span>Uma história única</span>
-                    <h2>52 anos de experiência</h2>
+                    <span>A Unique History</span>
+                    <h2>52 years of expertise</h2>
                     <div class="text">
                         <div>
                             <p>
@@ -91,14 +99,14 @@
                             </p>
 
                         </div>
-                        <img src="images/shave-brush.jpg" alt="52 anos de experiência">
+                        <img src="images/shave-brush.png" alt="52 anos de experiência">
                     </div>
                 </div>
             </div>
         </section>
         <section class="services" id="services">
             <div class="container">
-                <h2>Nossos Serviços</h2>
+                <h2>Our Services</h2>
                 <img src="images/heading-ic.png">                
             
                 <div class="content">
@@ -117,7 +125,7 @@
                     </div>
 
                     <div>
-                        <img src="images/razoe-shaver.png" alt="Razor Shaver">
+                        <img src="images/razoe-shaver.png" alt="Razor Shaver" class="shaver">
                         <h4>Lorem Ipsum</h4>
                         <img src="images/head-line-ic.png">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sapiente necessitatibus alias sunt, ratione quasi natus impedit ut, velit consectetur, soluta provident officiis facere. Iusto minus explicabo iure sed dolorum.</p>
@@ -127,12 +135,12 @@
         </section>
         <section class="appointment" id="appointment">
             <div class="container">
-                <h2>Faça um agendamento</h2>
+                <h2>Make an appointment</h2>
                 <img src="images/heading-ic-white.png" alt="Faça um Agendamento">
                 <form method="GET">
                     <div class="personal-data">
                         <div class="input-wrapper">
-                            <label for="edtName">Nome</label>
+                            <label for="edtName">Name</label>
                             <input class="textField" type="text" name="edtName" id="edtName" placeholder="Digite seu nome">
                         </div>
                         <div class="input-wrapper">
@@ -140,15 +148,15 @@
                             <input class="textField" type="email" name="edtEmail" id="edtEmail" placeholder="Digite seu e-mail">
                         </div>
                         <div class="input-wrapper">
-                            <label for="edtPhone">Telefone</label>
+                            <label for="edtPhone">Phone</label>
                             <input class="textField" type="tel" name="edtPhone" id="edtPhone" placeholder="Digite seu telefone">
                         </div>
                         <div class="input-wrapper">
-                            <label for="listServices">Tipo de serviço</label>
+                            <label for="listServices">Service</label>
                             <select class="textField" name="listServices" id="listServices">
-                                <option value=""> -- Selecione o Serviço -- </option>
-                                <option value="Cortar o Cabelo">Cortar o Cabelo</option>
-                                <option value="Fazer a Barba">Fazer a Barba</option>
+                                <option value=""> -- Select the Service -- </option>
+                                <option value="Cortar o Cabelo">Haircut</option>
+                                <option value="Fazer a Barba">Beard</option>
                             </select>
                         </div>
                     </div>
@@ -162,7 +170,7 @@
         </section>
         <section class="gallery" id="gallery">
             <div class="container">
-                <h2>Galeria de Fotos</h2>
+                <h2>Gallery</h2>
                 <img src="images/heading-ic.png" alt="Galeria de Fotos">
                 <div class="gallery-wrapper">
                     <div>
@@ -192,54 +200,61 @@
         <section class="location" id="location">
             <div class="container">
                 <div class="head">
-                    <div class="info">
-                        <div class="icon">
-                            <img src="images/map-img1.png">
+                    <div>
+                        <div class="info">
+                            <div class="icon">
+                                <img src="images/map-img1.png">
+                            </div>
+                            <div class="text">
+                                <span>Location</span>
+                                33 Matrix St.
+                            </div>
                         </div>
-                        <div class="text">
-                            <span>Localização</span>
-                            Rua da Matrix, 33
-                        </div>
-                    </div>
-
-                    <div class="info">
-                        <div class="icon">
-                            <img src="images/map-img2.png">
-                        </div>
-                        <div class="text">
-                            <span>Telefone</span>
-                            (11) 9999-9999
-                        </div>
-                    </div>
-
-                    <div class="info">
-                        <div class="icon">
-                            <img src="images/map-img3.png">
-                        </div>
-                        <div class="text">
-                            <span>E-mail</span>
-                            contato@barbershop.com
+    
+                        <div class="info">
+                            <div class="icon">
+                                <img src="images/map-img2.png">
+                            </div>
+                            <div class="text">
+                                <span>Phone</span>
+                                (11) 9999-9999
+                            </div>
                         </div>
                     </div>
 
-                    <div class="info">
-                        <div class="icon">
-                            <img src="images/map-img4.png">
+                    <div>
+                        <div class="info">
+                            <div class="icon">
+                                <img src="images/map-img3.png">
+                            </div>
+                            <div class="text">
+                                <span>E-mail</span>
+                                contact@barbershop.com
+                            </div>
                         </div>
-                        <div class="text">
-                            <span>Horário</span>
-                            Seg. à Sex. 9AM às 17PM
+    
+                        <div class="info">
+                            <div class="icon">
+                                <img src="images/map-img4.png">
+                            </div>
+                            <div class="text">
+                                <span>Opening Hours</span>
+                                • Mon. to Fri. 9AM to 17PM<br>
+                                • Sat. 9AM to 14AM
+                            </div>
                         </div>
+
                     </div>
                 </div>
 
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3513.3360279483068!2d-52.79107124834795!3d-28.28814335869168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fd315898e5342b%3A0x736f82111c8e3a50!2sR.%20Alexandre%20da%20Motta%2C%20943%20-%20Centro%2C%20Carazinho%20-%20RS%2C%2099500-000!5e0!3m2!1spt-BR!2sbr!4v1666177393047!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15935390.909275224!2d-52.58344501519463!3d-12.812469219106118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1666475973138!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
         <footer>
-            © 2022 Barber Shop - Todos os direitos reservados
+            © 2022 Barber Shop - All rights reserved
+            <span>Developed by&nbsp;<a href="https://github.com/joaotextor" target="_blank">@joaotextor</a></span>
         </footer>
     </body>
 </html>

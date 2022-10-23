@@ -1,0 +1,32 @@
+@import 'base';
+@import 'home';
+@import 'about';
+@import 'services';
+@import 'appointment';
+@import 'gallery';
+@import 'location';
+@import 'footer';
+
+@media (max-width: 1170px) and (min-width: 1000px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 999px) and (min-width: 900px) {
+    .container {
+        width: 900px;
+    }
+}
+
+@media (max-width: 899px) and (min-width: 800px) {
+    .container {
+        width: 800px;
+    }
+}
+
+@media (max-width: 799px) and (min-width: 700px) {
+    .container {
+        width: 700px;
+    }
+}

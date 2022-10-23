@@ -1,0 +1,18 @@
+/****************
+* FOOTER
+****************/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #191919;
+    color: var(--color-primary-light);
+    font-size: 15px;
+
+    span {
+        display:block;
+    }
+}

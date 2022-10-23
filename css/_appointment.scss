@@ -1,0 +1,85 @@
+/****************
+* AGENDAMENTO
+****************/
+
+.appointment {
+    background-color: var(--color-primary);
+    color: var(--color-primary-light);
+    padding: 100px 0;
+    background-image: url(../images/chair-ic.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 300px;
+
+    .container {
+
+        h2 {
+            font-weight: 400;
+            font-size: 50px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        form {
+            margin-top: 80px;
+
+            .personal-data {
+                display: flex;
+                justify-content: space-between;
+                margin: 0 0 20px 0;
+            }
+
+            .input-wrapper {
+                width: 100%;
+                margin-right: 50px;
+
+                label {
+                    display: block;
+                    font-size: 15px;
+                    margin-bottom: 2px;
+                }
+
+                .textField,
+                textarea {
+                    padding: 10px;
+                    border-radius: 5px 5px;
+                    border: 0;
+                    outline: none;
+                    width: 100%;
+                }
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+
+                textarea {
+                    width: 100%;
+                    height: 100px;
+                }
+
+                button {
+                    background-color: var(--color-secondary);
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: white;
+                    padding: 15px 40px;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        @media (max-width: 1170px) and (min-width: 100px) {
+            form {
+                margin: 80px 20px 0px 20px;
+            }
+        }
+
+        
+    }
+}

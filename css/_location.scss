@@ -1,0 +1,77 @@
+/****************
+* LOCATION
+****************/
+
+.location {
+    padding: 100px 0;
+    background: url(../images/bg-location.jpg);
+    background-size: cover;
+
+    .container {
+
+        .head {
+            background-color: #191919;
+            display: flex;
+            padding: 50px 40px;
+            width: 100%;
+            justify-content: space-between;
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+
+                .info {
+                    display: flex;
+                    align-items: center;
+
+                    .icon {
+                        border: 1px solid var(--color-primary);
+                        padding: 16px;
+                        border-radius: 50%;
+                        width: 50px;
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        margin-right: 15px;
+                    }
+
+                    .text {
+                        display: block;
+                        color: var(--color-primary-light);
+
+                        span {
+                            display: block;
+                            color: gray;
+                        }
+                    }
+                    
+                }
+            }
+
+            @media (max-width: 1000px) and (min-width: 700px) {
+                div {
+                    margin-top: 10px;
+                    display: inline-block;
+                    justify-content: flex-start;
+
+                    .info {
+                        //text-align: center;
+                        width: 600px;
+                    }
+                }
+            }
+
+            
+        }
+
+        .map {
+            width: 100%;
+
+            iframe {
+                width: 100%;
+            }
+        }
+}
+}
