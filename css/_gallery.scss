@@ -4,7 +4,7 @@
 
 .gallery {
     background-color: var(--color-primary-light);
-    padding: 100px 0;
+    padding: 100px 0 0 0;
 
     .container {
 
@@ -27,7 +27,7 @@
             height: 100vh;
             flex-direction: column;
             flex-wrap: wrap;
-            width: 900px;
+            width: 100%;
 
             div {
                 margin: 6px;
@@ -40,13 +40,15 @@
             }
         }
 
-        @media (max-width: 1000px) and (min-width: 700px) {
+        @media (max-width: 1000px) {
             .gallery-wrapper {
+                flex-wrap: nowrap;
                 align-items: center;
-                width: 700px;
+                width: 100vw;
+                height: 100%;
                 
                 div {
-                    width: 35%;
+                    width: 90%;
                 }
             }
 
