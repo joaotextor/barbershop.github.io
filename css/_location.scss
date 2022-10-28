@@ -8,7 +8,7 @@
     background-size: cover;
 
     .container {
-
+        
         .head {
             background-color: #191919;
             display: flex;
@@ -48,22 +48,7 @@
                     }
                     
                 }
-            }
-
-            @media (max-width: 1000px) {
-                div {
-                    margin-top: 10px;
-                    display: inline-block;
-                    justify-content: flex-start;
-
-                    .info {
-                        //text-align: center;
-                        width: 600px;
-                    }
-                }
-            }
-
-            
+            }            
         }
 
         .map {
@@ -73,5 +58,115 @@
                 width: 100%;
             }
         }
+    }
 }
+
+@media (max-width: 1200px) {
+    .location {
+        padding: 20px 0;
+        .container {
+            .head {
+                padding: 10px 0 30px 0;
+                flex-direction: row;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                
+                div {
+                    margin-top: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+
+                    .info {
+                        //text-align: center;
+                        width: 400px;
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                        
+                        
+                        .icon {
+                            margin: 0;
+                            align-self: center;
+                        }
+                    }
+                }
+            }
+        }
+    }         
+}
+
+
+@media (max-width: 700px) {
+    .location {
+        padding: 20px 0;
+        .container {
+            .head {
+                padding: 10px 0 30px 0;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                
+                div {
+                    margin-top: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+
+                    .info {
+                        //text-align: center;
+                        width: 400px;
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                        
+                        
+                        .icon {
+                            margin: 0;
+                            align-self: center;
+                        }
+                    }
+                }
+            }
+        }
+    }         
+}
+
+
+@media (max-width: 400px) {
+    .location {
+        padding: 20px 0;
+        .container {
+            .head {
+                padding: 10px 0 30px 0;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                
+                div {
+                    margin-top: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+
+                    .info {
+                        //text-align: center;
+                        width: 350px;
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                        
+                        
+                        .icon {
+                            margin: 0;
+                            align-self: center;
+                        }
+                    }
+                }
+            }
+        }
+    }         
 }

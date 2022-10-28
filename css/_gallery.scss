@@ -27,31 +27,104 @@
             height: 100vh;
             flex-direction: column;
             flex-wrap: wrap;
-            width: 100%;
+            width: 70%;
 
             div {
                 margin: 6px;
                 width: 33%;
                 border: 10px solid var(--color-primary);
 
+                
+
                 img {
                     width: 100%;
+                    transition: scale 350ms ease, opacity 350ms linear;
+                }
+
+                &:hover {
+                    border-color: black;
+                }
+            }
+            
+        }
+
+        .gallery-wrapper:has(:hover) img:not(:hover) {
+            scale: .8;
+            opacity: .7;
+        }
+
+    }
+}
+
+@media (max-width: 1200px) {
+    .gallery {
+        padding: 20px 0 0 0;
+
+        .container {
+
+            //
+
+            h2 {
+                font-size: 40px;
+            }
+            .gallery-wrapper {
+                flex-wrap: wrap;
+                align-items: center;
+                width: 70vw;
+                margin: 35px;
+                height: 100vh;
+                
+                div {
+                    width: 40%;
                 }
             }
         }
+    }
+}
 
-        @media (max-width: 1000px) {
+@media (max-width: 700px) {
+    .gallery {
+        padding: 20px 0 0 0;
+
+        .container {
+
+            h2 {
+                font-size: 40px;
+            }
             .gallery-wrapper {
                 flex-wrap: nowrap;
                 align-items: center;
                 width: 100vw;
+                height: 95%;
+                
+                div {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+    .gallery {
+        padding: 20px 0 0 0;
+
+        .container {
+
+            h2 {
+                font-size: 40px;
+            }
+            .gallery-wrapper {
+                flex-wrap: nowrap;
+                align-items: center;
+                width: 80%;
                 height: 100%;
                 
                 div {
-                    width: 90%;
+                    width: 80%;
                 }
             }
-
         }
     }
 }
